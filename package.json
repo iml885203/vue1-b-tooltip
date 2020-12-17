@@ -26,7 +26,7 @@
   ],
   "dependencies": {},
   "files": [
-    "/src"
+    "/dist"
   ],
   "devDependencies": {
     "babel-cli": "^6.26.0",
