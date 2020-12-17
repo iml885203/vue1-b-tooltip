@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>Vue1 b-tooltip</title>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css'>
+  </head>
+  <body class="bg-light">
+    <div class="jumbotron text-center">
+      <h1>Vue1 b-tooltop</h1>
+      <p>Vue 1.0.28 | Bootstrap 3.4.1 | jQuery 2.1.4</p>
+    </div>
+    <div class="container text-center">
+      <div class="row margin-bottom-lg">
+        <div class="col-xs-3">
+          <button class="btn btn-primary" v-b-tooltip.hover.top="'Tooltip!'">Top</button>
+        </div>
+        <div class="col-xs-3">
+          <button class="btn btn-primary" v-b-tooltip.hover.right="'Tooltip!'">Right</button>
+        </div>
+        <div class="col-xs-3">
+          <button class="btn btn-primary" v-b-tooltip.hover.bottom="'Tooltip!'">Bottom</button>
+        </div>
+        <div class="col-xs-3">
+          <button class="btn btn-primary" v-b-tooltip.hover.left="'Tooltip!'">Left</button>
+        </div>
+      </div>
+      <div class="row margin-bottom-lg">
+        <div class="col-xs-3">
+          <button class="btn btn-primary" v-b-tooltip="'Tooltip!'">Hover + Focus</button>
+        </div>
+        <div class="col-xs-3">
+          <button class="btn btn-primary" v-b-tooltip.hover="'Tooltip!'">Hover</button>
+        </div>
+        <div class="col-xs-3">
+          <button class="btn btn-primary" v-b-tooltip.click="'Tooltip!'">Click</button>
+        </div>
+        <div class="col-xs-3">
+          <button class="btn btn-primary" v-b-tooltip.focus="'Tooltip!'">Focus</button>
+        </div>
+      </div>
+      <div class="row margin-bottom-lg">
+        <div class="col-xs-12">
+          <button class="btn btn-primary disabled" v-b-tooltip.top="v-b-tooltip.top" title="Disabled tooltip">Disabled button</button>
+        </div>
+      </div>
+      <div class="row margin-bottom-lg">
+        <div class="col-xs-3">
+          <button class="btn btn-primary" id="t" v-b-tooltip="v-b-tooltip" :title="'Tip from title attribute ' + date">Title</button>
+        </div>
+        <div class="col-xs-3">
+          <button class="btn btn-primary" v-b-tooltip.hover="'String Tip'">String</button>
+        </div>
+        <div class="col-xs-3">
+          <button class="btn btn-primary" v-b-tooltip.hover.html="tipData">Data</button>
+        </div>
+        <div class="col-xs-3">
+          <button class="btn btn-primary" v-b-tooltip.hover.html="tipMethod">Method</button>
+        </div>
+      </div>
+    </div>
+
+    <br/><br/><br/>
+
+    <script src='https://cdn.jsdelivr.net/npm/vue@1.0.28/dist/vue.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/vue1-b-tooltip@1.0.1/dist/vue1-b-tooltip.js"></script>
+    <script src="./script.js"></script>
+  </body>
+  <style>
+    .margin-top-xs {
+      margin-top: 5px;
+    }
+    .margin-top-sm {
+      margin-top: 10px;
+    }
+    .margin-top-md {
+      margin-top: 20px;
+    }
+    .margin-top-lg {
+      margin-top: 40px;
+    }
+
+    .margin-right-xs {
+      margin-right: 5px;
+    }
+    .margin-right-sm {
+      margin-right: 10px;
+    }
+    .margin-right-md {
+      margin-right: 20px;
+    }
+    .margin-right-lg {
+      margin-right: 40px;
+    }
+
+    .margin-bottom-xs {
+      margin-bottom: 5px;
+    }
+    .margin-bottom-sm {
+      margin-bottom: 10px;
+    }
+    .margin-bottom-md {
+      margin-bottom: 20px;
+    }
+    .margin-bottom-lg {
+      margin-bottom: 40px;
+    }
+
+    .margin-left-xs {
+      margin-left: 5px;
+    }
+    .margin-left-sm {
+      margin-left: 10px;
+    }
+    .margin-left-md {
+      margin-left: 20px;
+    }
+    .margin-left-lg {
+      margin-left: 40px;
+    }
+  </style>
+</html>
