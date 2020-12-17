@@ -1,2 +1,2 @@
 # vue1-b-tooltip
-Bootstrap tooltip for vue1 directive
+> Bootstrap tooltip for vue1 directive

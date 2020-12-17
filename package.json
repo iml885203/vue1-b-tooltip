@@ -1,0 +1,30 @@
+{
+  "name": "vue1-b-tooltip",
+  "version": "1.0.1",
+  "description": "Bootstrap tooltip for vue1 directive",
+  "main": "src/vue1-b-tooltip.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iml885203/vue1-b-tooltip.git"
+  },
+  "author": "Long Guo <iml885203@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iml885203/vue1-b-tooltip/issues"
+  },
+  "homepage": "https://github.com/iml885203/vue1-b-tooltip#readme",
+  "keywords": [
+    "Vue1",
+    "VueJS",
+    "Vue",
+    "bootstrap",
+    "tooltip"
+  ],
+  "dependencies": {},
+  "files": [
+    "/src"
+  ]
+}
