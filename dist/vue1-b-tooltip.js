@@ -86,6 +86,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         // run tooltip
         $ele.tooltip(config);
       },
+      unbind: function unbind() {
+        var $ele = $(this.el);
+        var isSetBefore = $ele.data('bs.tooltip');
+        if (isSetBefore) {
+          $ele.tooltip('destroy');
+        }
+      },
 
 
       paramWatchers: {
