@@ -50,7 +50,7 @@
         let config = {};
 
         // validate
-        const htmlRE = /^html$/i
+        const htmlRE = /^html$/i;
         const placementRE = /^(auto|top|bottom|left|right)$/i;
         const triggerRE = /^(click|hover|focus)$/i;
 
@@ -59,9 +59,9 @@
         const modifiers = Object.keys(this.modifiers);
         modifiers.forEach(mod => {
           if(htmlRE.test(mod)) {
-            config.html = true
+            config.html = true;
           } else if(placementRE.test(mod)) {
-            config.placement = mod
+            config.placement = mod;
           } else if(triggerRE.test(mod)) {
             if(!config.trigger){
               config.trigger = mod;
@@ -83,11 +83,19 @@
           config = {
             ...config,
             ...title
-          }
+          };
         }
 
         // run tooltip
         $ele.tooltip(config);
+      },
+
+      unbind() {
+        const $ele = $(this.el);
+        const isSetBefore = $ele.data('bs.tooltip');
+        if(isSetBefore) {
+          $ele.tooltip('destroy');
+        }
       },
 
       paramWatchers: {
